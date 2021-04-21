@@ -15,11 +15,22 @@ body{
 		background-color: #f0efee;
 	
 }
+
 nav li,footer li {
 		display:inline;
 		padding-right:20px;
 		
 }
+nav a:link {color: #black;
+			text-decoration:none;
+}
+nav a:visited {color:#6a7355;
+				text-decoration:none;
+}nav a:hover {color:#FFF;
+		text-decoration:none;
+		background-color:#6a7355 ;
+}
+
 			
 #content {
 			background-color: #f0efee;
