@@ -50,6 +50,7 @@ h1 {
 				<li><a href="About.html"> About </a> </li> <!--Add About link -->	
 				<li><a href="">Contact </a></li> <!--Add contact link -->
 				<li><a href="Help.html">FAQ </a></li> <!--Add help link -->	
+				<li><a class="cart" href="CartPage.html"><img src = "Pictures/basket-cart.svg" width = 20px height = 20px></a></li>
 				
 				
 			</ul>		
@@ -90,6 +91,29 @@ h1 {
 		</ul>
 		</footer>		
 	</div><!--end container-->		
+	<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 </body>	
 </html>		
