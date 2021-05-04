@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- Harrison 4/20/2021 starting Home page -->
-
+<!-- Hilario 5/04/2021 starting Home page -->
     <head>
         <title> Home </title>
         <script src="https://use.fontawesome.com/2eb4ccedb6.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		<link rel="icon"  href="Pictures/basket-icon.png">
 		<link rel="stylesheet" type="text/css" href="Main.css">
+		<link rel="stylesheet" type="text/css" href="CartPage.Css">
 		<style>
       
 
 
-            #content1 {
-                        background-color: #f0efee;
-                        background-image: url("Pictures/Home-Background.jpg");
-                        background-repeat: no-repeat;
-						background-position:top;
-                        padding:10px;
-                        height: 800px;
-                        text-align: center;
-                        font-family: Times New Roman;
-                        font-size: 20px;
-                        
-                        
-            }
             #Paragraphs {
                         text-indent: 50px;
                         width: 800px;
@@ -53,6 +40,7 @@
 		<div id = "nav-containter">
             <header> 
                 <img src="Pictures/Longaberger-Logo-Transparent.png" alt="Longaberger-Logo">
+				
             </header> 
             
                 <nav>	
@@ -60,18 +48,126 @@
                         <li><a href= "Index.html"> Home </a> </li>	 <!--Add home link -->	
                         <li><a href="About.html"> About </a> </li> <!--Add About link -->	
                         <li><a href="">Contact </a></li> <!--Add contact link -->
-						<li><a href="Help.html">FAQ </a></li> <!--Add help link -->	
+						<li><a href="Help.html"><i class="fab"></i>FAQ </a></li> <!--Add help link -->	
 						<li><a class="cart" href="CartPage.html"><img src = "Pictures/basket-cart.svg" width = 30px height = 30px></a></li>
-                    </ul>		
+						
+                    </ul>
+						
+					
                 </nav>
+			
+				
             </div> <!--End of nav-containter-->
-            <div id = "content1">
-                <h1> Home </h1>
-                <div id = "home-text">
-                    <p>We are Longaberger. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Et architecto dolorum sapiente tenetur laudantium totam amet maxime atque eius eum odit omnis voluptatum, 
-                        sunt reiciendis eos ab blanditiis perspiciatis consectetur.</p>
-                </div> <!-- End of home-text -->		
+            <div id = "content">
+  <div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Cart
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="Pictures/Sm_Trug_basket.jpg" alt=""/>
+    </div>
+ 
+    <div class="description">
+	  <span>Small Trug Basket</span>
+      <span>Light Brown</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="Pictures/plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="Pictures/minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$98</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="Pictures/Wine-Caddy.jpg" alt=""/>
+    </div>
+ 
+    <div class="description">
+      <span>Wine Caddy Basket</span>
+      <span>Light Grey</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="Pictures/plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="Pictures/minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$118</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="Pictures/Large-Skin-Care-Basket.jpg" alt=""/>
+    </div>
+ 
+    <div class="description">
+      <span>Large Skin Care Basket</span>
+      <span>Light Grey</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <img src="Pictures/plus.svg" alt="" />
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <img src="Pictures/minus.svg" alt="" />
+      </button>
+    </div>
+ 
+    <div class="total-price">$286</div>
+  </div>
+  <!-- Total slot -->
+  <div class="Gt-item">
+  <div class="GT-section">
+	<div class="grand_Total">
+		<span> Grand total </span>
+	</div>
+	 <div class="grand-total-price">$502</div>
+	<button class = "GT-Button" type="button">
+		<span> Check-out </span>
+	</button>
+ 
+ 
+   
+  </div>
+  </div>
+ 
+</div>		
             </div>	<!-- End of content -->
             <footer>
                 <ul>
@@ -88,7 +184,7 @@
                 </ul>   
             </footer>		
         </div><!--end container-->		
-		<button class="open-button" onclick="openForm()">Chat</button>
+<button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
